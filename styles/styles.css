@@ -7,7 +7,7 @@
 body{
     margin: 0;
     font-family: 'Roboto Slab', sans-serif;
-    background-color: #00c4cc;
+    background-color: #1ECBE1;
     color: #fff;
 }
 
@@ -22,6 +22,12 @@ body{
     letter-spacing: 0px;
     color: #fff;
     margin: auto 0 auto 60px;
+}
+
+.navbar-content>.container>.brand-logo:focus,
+.navbar-content>.container>.menu>.nav-item>.nav-link:focus{
+    outline: none;
+    color: #cbcbcb;
 }
 
 .navbar-content>.container>.brand-logo:hover{
@@ -52,10 +58,56 @@ body{
 /* Main Page Content  */
 .main-content>.main-page{
     display: flex;
+    justify-content: space-around;
 }
 
 .main-content>.main-page>.picture{
     height: 500px;
-    width: 50vw;
-    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content>.main-page>.picture>.profile-picture{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.main-content>.main-page>.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content>.main-page>.heading p{
+    font-size: 3.2em;
+}
+
+.main-content>.main-page>.heading>p>span{
+    /* color: #F48F3E; */
+    color: #303;
+    font-weight: extra-bold;
+    font-size: 1.2em;
+}
+
+.main-content>.main-page>.heading>a.talkBtn{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6em;
+    padding: 16px;
+    background-color: #E1341E;
+    margin-top: -30px;
+    border-radius: 2px;
+}
+
+.main-content>.main-page>.heading>a.talkBtn:hover, .main-content>.main-page>.heading>a.talkBtn:focus{
+    background-color: #E75D4B;
+    outline: none;
+}
+
+.main-content>.main-page>.heading>a.talkBtn:active{
+    transform: scale(0.98);
 }
