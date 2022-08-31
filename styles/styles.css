@@ -8,6 +8,7 @@ body{
     margin: 0;
     font-family: 'Roboto Slab', sans-serif;
     background-color: #1ECBE1;
+    background: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
     color: #fff;
 }
 
@@ -72,7 +73,7 @@ body{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    opacity: 0.9;
+    /* opacity: 0.8; */
 }
 
 .main-content>.main-page>.heading{
