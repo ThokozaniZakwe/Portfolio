@@ -3,12 +3,17 @@
 *{
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
     font-family: 'Roboto Slab', sans-serif;
-    background-color: #1ECBE1;
-    background: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    background-image: url('../images/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: #fff;
 }
 
@@ -56,7 +61,7 @@ body{
     border-bottom: 2px solid #cbcbcb;
 }
 
-/* Main Page Content  */
+/* Main Page Styles  */
 .main-content>.main-page{
     display: flex;
     justify-content: space-around;
@@ -70,10 +75,9 @@ body{
 }
 
 .main-content>.main-page>.picture>.profile-picture{
-    width: 300px;
-    height: 300px;
+    width: 380px;
+    height: 380px;
     border-radius: 50%;
-    /* opacity: 0.8; */
 }
 
 .main-content>.main-page>.heading{
@@ -88,7 +92,6 @@ body{
 }
 
 .main-content>.main-page>.heading>p>span{
-    /* color: #F48F3E; */
     color: #303;
     font-weight: extra-bold;
     font-size: 1.2em;
@@ -111,4 +114,67 @@ body{
 
 .main-content>.main-page>.heading>a.talkBtn:active{
     transform: scale(0.98);
+}
+
+/* Skills Page Styles */
+.main-content>.skills-page{
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #ae561c 100%);
+    border-top: 4px solid #fff;
+    height: 600px;
+}
+
+.main-content>.skills-page>h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 60px;
+    font-size: 2.6rem;
+}
+
+.main-content>.skills-page>.skills-logos{
+    display: flex;
+    justify-content: center;
+}
+
+.main-content>.skills-page>.skills-logos>.card{
+    padding: 35px;
+    margin: 20px;
+    width: 220px;
+    height: 340px;
+    border-radius: 5px;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #1c74ae 100%);
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+}
+
+.main-content>.skills-page>.skills-logos>.card>p, .main-content>.skills-page>.skills-logos>.card>h1{
+    font-size: 1.1rem;
+}
+
+.learn-more{
+    text-decoration: none;
+    color: #fff;
+    padding: 16px;
+    background-color: #E1341E;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 20px;
+    right: 45px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.learn-more:hover{
+    background-color: #E75D4B;
+}
+
+.learn-more:focus{
+    outline: none;
+    background-color: #E75D4B;
+}
+
+.learn-more:active{
+    transform: scale(.98);
 }

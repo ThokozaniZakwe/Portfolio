@@ -9,28 +9,60 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav class="navbar-content" id="navbar">
-        <div class="container">
-            <a href="index.html" class="brand-logo">Thokozani Zakwe</a>
-            <ul class="menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            </ul>
-        </div>
-    </nav>
-    <main class="main-content" id="main">
-        <article class="main-page">
-            <div class="picture">
-                <img class="profile-picture" src="images/Portfolio1.jpg" alt="PP">
+    <div class="container">
+        <nav class="navbar-content" id="navbar">
+            <div class="container">
+                <a href="index.html" class="brand-logo">Thokozani Zakwe</a>
+                <ul class="menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                </ul>
             </div>
-            <div class="heading">
-                <p>Hi, I'm <span>Thokozani Zakwe</span>, <br> and I'm a <span>Full-Stack Developer</span></p>
-                <a href="#" class="talkBtn">Let's Talk</a>
-            </div>
-        </article>
-    </main>
-    <footer class="footer-content" id="footer"></footer>
+        </nav>
+        <main class="main-content" id="main">
+            <article class="main-page">
+                <div class="picture">
+                    <img class="profile-picture" src="images/Portfolio2.jpg" alt="PP">
+                </div>
+                <div class="heading">
+                    <p>Hi, I'm <span>Thokozani Zakwe</span>, <br> and I'm a <span>Full-Stack Developer</span></p>
+                    <a href="mailto:tezakwe@gmail.com" class="talkBtn">Let's Talk</a>
+                </div>
+            </article>
+            <article class="skills-page" id="skills">
+                <h1>Skills</h1>
+                <div class="skills-logos">
+                    <div class="card html">
+                        <i class="fa-brands fa-html5 fa-2x"></i>
+                        <h1>HTML5</h1>
+                        <p>This is a Markup Language to put content on your website</p>
+                        <a class="learn-more" href="https://en.wikipedia.org/wiki/HTML5">Learn More</a>
+                    </div>
+                    <div class="card css3">
+                        <i class="fa-brands fa-css3 fa-2x"></i>
+                        <h1>CSS3</h1>
+                        <p>CSS is for styling and structuring content on your website</p>
+                        <a class="learn-more" href="https://en.wikipedia.org/wiki/CSS">Learn More</a>
+                    </div>
+                    <div class="card javascript">
+                        <i class="fa-brands fa-js fa-2x"></i>
+                        <h1>Javascript</h1>
+                        <p>It is a programming language that makes your website respond dynamically</p>
+                        <a class="learn-more" href="https://en.wikipedia.org/wiki/Javascript">Learn More</a>
+                    </div>
+                    <div class="card csharp">
+                        <i class="fa-solid fa-c fa-2x"></i><i class="fa-solid fa-hashtag fa-2x"></i>
+                        <h1>C-Sharp</h1>
+                        <p>OOP language used for back-end programming to link up with the server</p>
+                        <a class="learn-more" href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">Learn More</a>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer class="footer-content" id="footer"></footer>
+    </div>
 
     <script src="scripts/main.js"></script>
 </body>
